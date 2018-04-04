@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Mar 14 09:13:38 2018
+# Process ID: 5972
+# Current directory: C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent108 C:\Users\Altium-3\Documents\Thibo_Amine\project_FPGA\project_FPGA.xpr
+# Log file: C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/vivado.log
+# Journal file: C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/SBC.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/SBC.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROR.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROR.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/OUT.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/OUT.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/JMP.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/JMP.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ADD.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ADD.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/LDA.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/LDA.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/OR.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/OR.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/AND.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/AND.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/SUB.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/SUB.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/JNC.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/JNC.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROL.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROL.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/XOR.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/XOR.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/STA.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/STA.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/JNZ.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/JNZ.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ADC.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ADC.vhd
+update_compile_order -fileset sources_1
+remove_files {C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ADC.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ADD.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/JMP.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/JNC.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/JNZ.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/LDA.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/STA.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/SBC.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/SUB.vhd}
+file delete -force C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ADC.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ADD.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/JMP.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/JNC.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/JNZ.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/LDA.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/STA.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/SBC.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/SUB.vhd
+remove_files {C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/AND.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/OR.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/OUT.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROL.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROR.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/XOR.vhd}
+file delete -force C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/AND.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/OR.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/OUT.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROL.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROR.vhd C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/XOR.vhd
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/Instructions.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/Instructions.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Instructions [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/Memoire.vhd w ]
+add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/Memoire.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Memoire [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
