@@ -1,77 +1,99 @@
 #-----------------------------------------------------------
-# Vivado v2016.2 (64-bit)
-# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
-# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Wed Apr 04 13:00:10 2018
-# Process ID: 11160
-# Current directory: C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7556 C:\Users\Altium-3\Documents\Thibo_Amine\project_FPGA\project_FPGA.xpr
-# Log file: C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/vivado.log
-# Journal file: C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA\vivado.jou
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Apr 20 15:35:07 2018
+# Process ID: 1384
+# Current directory: C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9512 C:\Users\Altium7\Desktop\MCU-on-Basys3-master\MCU-on-Basys3-master\project_FPGA.xpr
+# Log file: C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/vivado.log
+# Journal file: C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.xpr
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
+open_project C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.xpr
+reset_run impl_1
+launch_runs impl_1
 wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
+launch_runs impl_1 -to_step write_bitstream
 wait_on_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
-set_property PROGRAM.FILE {C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.runs/impl_1/test_up.bit} [lindex [get_hw_devices] 0]
-current_hw_device [lindex [get_hw_devices] 0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.runs/impl_1/test_up.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.runs/impl_1/test_up.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.runs/impl_1/test_up.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
+launch_runs impl_1
 wait_on_run impl_1
-reset_run impl_1 -noclean_dir 
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
+launch_runs impl_1 -to_step write_bitstream
 wait_on_run impl_1
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.runs/impl_1/test_up.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.runs/impl_1/test_up.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
+launch_runs impl_1
 wait_on_run impl_1
-update_compile_order -fileset sources_1
-close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROM.vhd w ]
-add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROM.vhd
-update_compile_order -fileset sources_1
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.runs/impl_1/test_up.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-remove_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/Memoire.vhd
-file delete -force C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/Memoire.vhd
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-close [ open C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd w ]
-add_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd
-update_compile_order -fileset sources_1
-remove_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/Instructions.vhd
-file delete -force C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/Instructions.vhd
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
+launch_runs impl_1
 wait_on_run impl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 2
+reset_run synth_1
+launch_runs impl_1
 wait_on_run impl_1
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.runs/impl_1/test_up.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.runs/impl_1/test_up.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.runs/impl_1/test_up.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.runs/impl_1/test_up.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.runs/impl_1/test_up.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.runs/impl_1/test_up.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.runs/impl_1/test_up.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
