@@ -48,6 +48,7 @@ signal PC : STD_LOGIC_VECTOR (3 downto 0);
 signal data_in : STD_LOGIC_VECTOR (15 downto 0);
 signal inst : STD_LOGIC_VECTOR (3 downto 0);
 signal arg : STD_LOGIC_VECTOR (11 downto 0);
+
 component diviseur
     Port ( clock : in STD_LOGIC;
            pulse, pulse200 :out STD_LOGIC);

@@ -59,18 +59,21 @@ begin
 	begin
 		if clk='1' and clk'event then 
 			courant <= suivant;
-		    if reset = '1' then
-		        courant <= sf;
-		        PC <= (others => '0');--"0000";
-		    end if;
 		end if;
     end process;
+
+    --process(reset)
+    --begin
+    --    if reset = '1' then
+    --        PC <= "0000"; --(others => '0');
+    --   end if;
+    --end process;
 
     process(courant)
     begin
             case courant is
                when sf =>
-                   PC <= PC +1;
+                   PC <= PC + "0001";
                    IR <= data;
                    suivant <= sd;
                    led <= "001";    
