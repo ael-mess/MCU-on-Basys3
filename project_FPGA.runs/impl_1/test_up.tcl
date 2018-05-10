@@ -46,13 +46,14 @@ set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
 start_step write_bitstream
+set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param xicom.use_bs_reader 1
   open_checkpoint test_up_routed.dcp
-  set_property webtalk.parent_dir C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.cache/wt [current_project]
   catch { write_mem_info -force test_up.mmi }
-  write_bitstream -force test_up.bit 
+  write_bitstream -force -no_partial_bitfile test_up.bit 
   catch { write_sysdef -hwdef test_up.hwdef -bitfile test_up.bit -meminfo test_up.mmi -file test_up.sysdef }
   catch {write_debug_probes -quiet -force debug_nets}
   close_msg_db -file write_bitstream.pb
@@ -62,5 +63,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step write_bitstream
+  unset ACTIVE_STEP 
 }
 

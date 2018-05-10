@@ -22,6 +22,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -41,6 +43,7 @@ type tab is array(SIZE downto 0) of std_logic_vector(15 downto 0);
 signal data_tab : tab;
 
 signal p_pc : integer := 0;
+signal c : STD_LOGIC_VECTOR (1 downto 0) := "00";
 
 begin
 
@@ -50,7 +53,7 @@ data_tab(2) <= "1010000000001100"; --sta 0xC
 data_tab(3) <= "1010000000001101"; --sta 0xD
 data_tab(4) <= "1010000000001110"; --sta 0xE
 data_tab(5) <= "1010000000001111"; --sta 0xF
-data_tab(6) <= "0001000000000000"; --and 0x0
+data_tab(6) <= "0001000011110000"; --and 0x0
 data_tab(7) <= "1000000000000000"; --sw
 data_tab(8) <= "1000000000000000"; --sw
 data_tab(9) <= "1000000000000000"; --sw
@@ -64,10 +67,15 @@ data_tab(15) <= "1010111111111111"; --sta 0xC
 process(clk)
 begin
     --data <= data_tab(to_integer(unsigned(PC)));
-    if clk='1' and clk'event then 
-        data <= data_tab(p_pc);
-        p_pc <= p_pc + 1;
-        if p_pc=SIZE then p_pc<=0;
+    if clk='1' and clk'event then
+        if c="00" then
+            data <= data_tab(p_pc);
+            p_pc <= p_pc + 1;
+            if p_pc=SIZE then p_pc<=0;
+            end if;
+        end if;
+        c <= c + "01";
+        if c="11" then c<="00";
         end if;
     end if;
 end process;

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/constrs_1/new/test_diviseur.xdc rfile:../../../project_FPGA.srcs/constrs_1/new/test_diviseur.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/constrs_1/new/test_diviseur.xdc rfile:../../../project_FPGA.srcs/constrs_1/new/test_diviseur.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clock]
 set_property src_info {type:XDC file:1 line:46 export:INPUT save:INPUT read:READ} [current_design]

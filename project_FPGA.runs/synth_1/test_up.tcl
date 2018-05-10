@@ -10,23 +10,24 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.cache/wt [current_project]
-set_property parent.project_path C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.cache/wt [current_project]
+set_property parent.project_path C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_cache_permissions disable [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROM.vhd
-  C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ALU.vhd
-  C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/diviseur.vhd
-  C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/afficheur.vhd
-  C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd
-  C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd
+  C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ROM.vhd
+  C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ALU.vhd
+  C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/diviseur.vhd
+  C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/afficheur.vhd
+  C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/FSM.vhd
+  C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/constrs_1/new/test_diviseur.xdc
-set_property used_in_implementation false [get_files C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/constrs_1/new/test_diviseur.xdc]
+read_xdc C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/constrs_1/new/test_diviseur.xdc
+set_property used_in_implementation false [get_files C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/constrs_1/new/test_diviseur.xdc]
 
 
 synth_design -top test_up -part xc7a35tcpg236-1

@@ -1,11 +1,11 @@
 
 *** Running vivado
-    with args -log test_up.vds -m64 -mode batch -messageDb vivado.pb -notrace -source test_up.tcl
+    with args -log test_up.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_up.tcl
 
 
-****** Vivado v2016.2 (64-bit)
-  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
-  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
 source test_up.tcl -notrace
@@ -14,40 +14,45 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13072 
+INFO: Helper process launched with PID 1764 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 272.453 ; gain = 65.652
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 281.891 ; gain = 71.813
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'test_up' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:42]
-INFO: [Synth 8-3491] module 'diviseur' declared at 'C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/diviseur.vhd:37' bound to instance 'div' of component 'diviseur' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:84]
-INFO: [Synth 8-638] synthesizing module 'diviseur' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/diviseur.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'diviseur' (1#1) [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/diviseur.vhd:43]
-INFO: [Synth 8-3491] module 'ROM' declared at 'C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROM.vhd:31' bound to instance 'mem' of component 'ROM' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'ROM' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROM.vhd:37]
-WARNING: [Synth 8-3848] Net data_tab[0] in module/entity ROM does not have driver. [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROM.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'ROM' (2#1) [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ROM.vhd:37]
-INFO: [Synth 8-3491] module 'FSM' declared at 'C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:36' bound to instance 'mef' of component 'FSM' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:86]
-INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:46]
-WARNING: [Synth 8-614] signal 'PC' is read in the process but is not in the sensitivity list [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:69]
-WARNING: [Synth 8-614] signal 'data' is read in the process but is not in the sensitivity list [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:69]
-WARNING: [Synth 8-614] signal 'IR' is read in the process but is not in the sensitivity list [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:69]
-INFO: [Synth 8-256] done synthesizing module 'FSM' (3#1) [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:46]
-INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ALU.vhd:36' bound to instance 'ual' of component 'ALU' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:87]
-INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ALU.vhd:42]
-WARNING: [Synth 8-614] signal 'ARG' is read in the process but is not in the sensitivity list [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ALU.vhd:53]
-WARNING: [Synth 8-614] signal 'ACC' is read in the process but is not in the sensitivity list [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ALU.vhd:53]
-WARNING: [Synth 8-614] signal 'C' is read in the process but is not in the sensitivity list [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ALU.vhd:53]
-WARNING: [Synth 8-614] signal 'tmp_sw' is read in the process but is not in the sensitivity list [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ALU.vhd:53]
-INFO: [Synth 8-256] done synthesizing module 'ALU' (4#1) [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ALU.vhd:42]
-INFO: [Synth 8-3491] module 'afficheur' declared at 'C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/afficheur.vhd:36' bound to instance 'aff' of component 'afficheur' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:88]
-INFO: [Synth 8-638] synthesizing module 'afficheur' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/afficheur.vhd:44]
-WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/afficheur.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'afficheur' (5#1) [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/afficheur.vhd:44]
-INFO: [Synth 8-256] done synthesizing module 'test_up' (6#1) [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'test_up' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:42]
+INFO: [Synth 8-3491] module 'diviseur' declared at 'C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/diviseur.vhd:37' bound to instance 'div' of component 'diviseur' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'diviseur' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/diviseur.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'diviseur' (1#1) [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/diviseur.vhd:43]
+INFO: [Synth 8-3491] module 'ROM' declared at 'C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ROM.vhd:33' bound to instance 'mem' of component 'ROM' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'ROM' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ROM.vhd:40]
+	Parameter SIZE bound to: 16 - type: integer 
+WARNING: [Synth 8-3848] Net data_tab[16] in module/entity ROM does not have driver. [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ROM.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (2#1) [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ROM.vhd:40]
+INFO: [Synth 8-3491] module 'FSM' declared at 'C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/FSM.vhd:36' bound to instance 'mef' of component 'FSM' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/FSM.vhd:46]
+WARNING: [Synth 8-614] signal 'PC' is read in the process but is not in the sensitivity list [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/FSM.vhd:72]
+WARNING: [Synth 8-614] signal 'data' is read in the process but is not in the sensitivity list [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/FSM.vhd:72]
+WARNING: [Synth 8-614] signal 'IR' is read in the process but is not in the sensitivity list [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/FSM.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (3#1) [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/FSM.vhd:46]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ALU.vhd:36' bound to instance 'ual' of component 'ALU' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ALU.vhd:42]
+WARNING: [Synth 8-614] signal 'ARG' is read in the process but is not in the sensitivity list [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ALU.vhd:53]
+WARNING: [Synth 8-614] signal 'ACC' is read in the process but is not in the sensitivity list [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ALU.vhd:53]
+WARNING: [Synth 8-614] signal 'C' is read in the process but is not in the sensitivity list [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ALU.vhd:53]
+WARNING: [Synth 8-614] signal 'tmp_sw' is read in the process but is not in the sensitivity list [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ALU.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (4#1) [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ALU.vhd:42]
+INFO: [Synth 8-3491] module 'afficheur' declared at 'C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/afficheur.vhd:36' bound to instance 'aff' of component 'afficheur' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'afficheur' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/afficheur.vhd:44]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/afficheur.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'afficheur' (5#1) [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/afficheur.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'test_up' (6#1) [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:42]
 WARNING: [Synth 8-3331] design afficheur has unconnected port reset
+WARNING: [Synth 8-3331] design FSM has unconnected port reset
 WARNING: [Synth 8-3331] design ROM has unconnected port PC[3]
+WARNING: [Synth 8-3331] design ROM has unconnected port PC[2]
+WARNING: [Synth 8-3331] design ROM has unconnected port PC[1]
+WARNING: [Synth 8-3331] design ROM has unconnected port PC[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 309.855 ; gain = 103.055
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 319.352 ; gain = 109.273
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -56,59 +61,60 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin aff:iData[19] to constant 0 [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:88]
-WARNING: [Synth 8-3295] tying undriven pin aff:iData[18] to constant 0 [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:88]
-WARNING: [Synth 8-3295] tying undriven pin aff:iData[17] to constant 0 [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:88]
-WARNING: [Synth 8-3295] tying undriven pin aff:iData[16] to constant 0 [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:88]
-WARNING: [Synth 8-3295] tying undriven pin aff:iData[15] to constant 0 [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:88]
-WARNING: [Synth 8-3295] tying undriven pin aff:iData[14] to constant 0 [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:88]
-WARNING: [Synth 8-3295] tying undriven pin aff:iData[13] to constant 0 [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:88]
-WARNING: [Synth 8-3295] tying undriven pin aff:iData[12] to constant 0 [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/test_up.vhd:88]
+WARNING: [Synth 8-3295] tying undriven pin aff:iData[19] to constant 0 [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:89]
+WARNING: [Synth 8-3295] tying undriven pin aff:iData[18] to constant 0 [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:89]
+WARNING: [Synth 8-3295] tying undriven pin aff:iData[17] to constant 0 [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:89]
+WARNING: [Synth 8-3295] tying undriven pin aff:iData[16] to constant 0 [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:89]
+WARNING: [Synth 8-3295] tying undriven pin aff:iData[15] to constant 0 [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:89]
+WARNING: [Synth 8-3295] tying undriven pin aff:iData[14] to constant 0 [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:89]
+WARNING: [Synth 8-3295] tying undriven pin aff:iData[13] to constant 0 [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:89]
+WARNING: [Synth 8-3295] tying undriven pin aff:iData[12] to constant 0 [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd:89]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 309.855 ; gain = 103.055
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 319.352 ; gain = 109.273
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/constrs_1/new/test_diviseur.xdc]
-Finished Parsing XDC File [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/constrs_1/new/test_diviseur.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/constrs_1/new/test_diviseur.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_up_propImpl.xdc].
+Parsing XDC File [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/constrs_1/new/test_diviseur.xdc]
+Finished Parsing XDC File [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/constrs_1/new/test_diviseur.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/constrs_1/new/test_diviseur.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_up_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/test_up_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 598.746 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 616.133 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ALU.vhd:51]
+INFO: [Synth 8-5545] ROM "p_pc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ALU.vhd:51]
 INFO: [Synth 8-5544] ROM "temp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "tselect" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'inst_reg' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:78]
-WARNING: [Synth 8-327] inferring latch for variable 'arg_reg' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:82]
-WARNING: [Synth 8-327] inferring latch for variable 'PC_reg' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:73]
-WARNING: [Synth 8-327] inferring latch for variable 'IR_reg' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:74]
-WARNING: [Synth 8-327] inferring latch for variable 'ACC_reg' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ALU.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'tmp_sw_reg' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/ALU.vhd:72]
+WARNING: [Synth 8-327] inferring latch for variable 'inst_reg' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/FSM.vhd:81]
+WARNING: [Synth 8-327] inferring latch for variable 'arg_reg' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/FSM.vhd:85]
+WARNING: [Synth 8-327] inferring latch for variable 'PC_reg' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/FSM.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'IR_reg' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/FSM.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'ACC_reg' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ALU.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tmp_sw_reg' [C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ALU.vhd:72]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -121,22 +127,25 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 1     
 	   2 Input     12 Bit       Adders := 1     
 	   3 Input     12 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     12 Bit         XORs := 1     
 +---Registers : 
+	               32 Bit    Registers := 1     
 	               16 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
-	                2 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 3     
 +---Muxes : 
-	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
 	  16 Input     12 Bit        Muxes := 3     
 	  16 Input     11 Bit        Muxes := 1     
-	  16 Input      7 Bit        Muxes := 1     
 	   5 Input      4 Bit        Muxes := 2     
 	   4 Input      3 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
@@ -157,10 +166,16 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 2     
 Module ROM 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
+	               32 Bit    Registers := 1     
 	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
 +---Muxes : 
-	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
 Module FSM 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -189,7 +204,6 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 2     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	  16 Input      7 Bit        Muxes := 1     
 	   5 Input      4 Bit        Muxes := 2     
 	   5 Input      2 Bit        Muxes := 2     
 	   5 Input      1 Bit        Muxes := 2     
@@ -205,249 +219,29 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 598.746 ; gain = 391.945
 ---------------------------------------------------------------------------------
-Start Cross Boundary Optimization
+Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 598.746 ; gain = 391.945
----------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 598.746 ; gain = 391.945
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Area Optimization
----------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[11]' (FD) to 'mem/data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[7]' (FD) to 'mem/data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[8]' (FD) to 'mem/data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[9]' (FD) to 'mem/data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[10]' (FD) to 'mem/data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[0]' (FD) to 'mem/data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[1]' (FD) to 'mem/data_reg[3]'
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[2]' (FD) to 'mem/data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[3]' (FD) to 'mem/data_reg[12]'
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[4]' (FD) to 'mem/data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[5]' (FD) to 'mem/data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[14]' (FD) to 'mem/data_reg[6]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mem/data_reg[6] )
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[12]' (FD) to 'mem/data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[15]' (FD) to 'mem/data_reg[13]'
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[11]' (LD) to 'mef/IR_reg[0]'
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[7]' (LD) to 'mef/IR_reg[0]'
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[8]' (LD) to 'mef/IR_reg[0]'
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[9]' (LD) to 'mef/IR_reg[0]'
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[10]' (LD) to 'mef/IR_reg[0]'
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[0]' (LD) to 'mef/IR_reg[2]'
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[1]' (LD) to 'mef/IR_reg[15]'
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[2]' (LD) to 'mef/IR_reg[4]'
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[3]' (LD) to 'mef/IR_reg[15]'
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[4]' (LD) to 'mef/IR_reg[5]'
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[5]' (LD) to 'mef/IR_reg[6]'
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[14]' (LD) to 'mef/IR_reg[6]'
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[12]' (LD) to 'mef/IR_reg[15]'
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[15]' (LD) to 'mef/IR_reg[13]'
-INFO: [Synth 8-3886] merging instance 'mef/arg_reg[11]' (LD) to 'mef/arg_reg[5]'
-INFO: [Synth 8-3886] merging instance 'mef/arg_reg[7]' (LD) to 'mef/arg_reg[5]'
-INFO: [Synth 8-3886] merging instance 'mef/arg_reg[8]' (LD) to 'mef/arg_reg[5]'
-INFO: [Synth 8-3886] merging instance 'mef/arg_reg[9]' (LD) to 'mef/arg_reg[5]'
-INFO: [Synth 8-3886] merging instance 'mef/arg_reg[10]' (LD) to 'mef/arg_reg[5]'
-INFO: [Synth 8-3886] merging instance 'mef/arg_reg[0]' (LD) to 'mef/arg_reg[5]'
-INFO: [Synth 8-3886] merging instance 'mef/arg_reg[1]' (LD) to 'mef/arg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'mef/arg_reg[2]' (LD) to 'mef/arg_reg[5]'
-INFO: [Synth 8-3886] merging instance 'mef/arg_reg[4]' (LD) to 'mef/arg_reg[5]'
-INFO: [Synth 8-3886] merging instance 'mef/arg_reg[5]' (LD) to 'mef/arg_reg[6]'
-INFO: [Synth 8-3886] merging instance 'mef/inst_reg[0]' (LD) to 'mef/inst_reg[3]'
-INFO: [Synth 8-3886] merging instance 'mef/inst_reg[3]' (LD) to 'mef/inst_reg[1]'
+INFO: [Synth 8-5545] ROM "mem/p_pc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design test_up has unconnected port reset
+INFO: [Synth 8-3886] merging instance 'mem/data_reg[8]' (FDE) to 'mem/data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mem/data_reg[10]' (FDE) to 'mem/data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mem/data_reg[5]' (FDE) to 'mem/data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mef/IR_reg[8]' (LD) to 'mef/IR_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mef/IR_reg[10]' (LD) to 'mef/IR_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mef/IR_reg[5]' (LD) to 'mef/IR_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mef/arg_reg[8]' (LD) to 'mef/arg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mef/arg_reg[10]' (LD) to 'mef/arg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mef/arg_reg[5]' (LD) to 'mef/arg_reg[7]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aff/ptemp_reg )
-INFO: [Synth 8-3886] merging instance 'mem/data_reg[6]' (FD) to 'mem/data_reg[13]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mem/data_reg[13] )
-INFO: [Synth 8-3886] merging instance 'mef/IR_reg[6]' (LD) to 'mef/IR_reg[13]'
-INFO: [Synth 8-3886] merging instance 'mef/arg_reg[3]' (LD) to 'mef/arg_reg[6]'
-INFO: [Synth 8-3886] merging instance 'mef/inst_reg[2]' (LD) to 'mef/inst_reg[1]'
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[9]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[9]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[5]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[5]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[11]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[11]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[3]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[3]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[7]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[7]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[8]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[8]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[4]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[4]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[10]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[10]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[2]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[2]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[6]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[6]  is always disabled
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mef/IR_reg[13] )
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[9]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[9]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[5]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[5]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[11]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[11]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[3]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[3]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[7]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[7]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[8]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[8]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[4]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[4]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[10]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[10]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[2]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[2]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[6]  is always disabled
-WARNING: [Synth 8-264] enable of latch \ual/ACC_reg[6]  is always disabled
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mef/arg_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mef/inst_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ual/ACC_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ual/ACC_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ual/ACC_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ual/ACC_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ual/ACC_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ual/ACC_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ual/ACC_reg[8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ual/ACC_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ual/ACC_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ual/ACC_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ual/ACC_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ual/ACC_reg[6] )
-INFO: [Synth 8-3886] merging instance 'aff/temp_reg[1]' (FDE) to 'aff/temp_reg[0]'
-INFO: [Synth 8-3886] merging instance 'aff/ptemp_reg' (FDE) to 'aff/temp_reg[0]'
-INFO: [Synth 8-3886] merging instance 'aff/temp_reg[3]' (FDE) to 'aff/temp_reg[0]'
-INFO: [Synth 8-3886] merging instance 'aff/temp_reg[0]' (FDE) to 'aff/temp_reg[2]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aff/temp_reg[2] )
-INFO: [Synth 8-3886] merging instance 'aff/oData_reg[0]' (FD) to 'aff/oData_reg[5]'
-INFO: [Synth 8-3886] merging instance 'aff/oData_reg[1]' (FD) to 'aff/oData_reg[5]'
-INFO: [Synth 8-3886] merging instance 'aff/oData_reg[2]' (FD) to 'aff/oData_reg[5]'
-INFO: [Synth 8-3886] merging instance 'aff/oData_reg[3]' (FD) to 'aff/oData_reg[5]'
-INFO: [Synth 8-3886] merging instance 'aff/oData_reg[4]' (FD) to 'aff/oData_reg[5]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aff/oData_reg[5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\aff/oData_reg[6] )
-WARNING: [Synth 8-3332] Sequential element (mef/inst_reg[3]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/inst_reg[2]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/inst_reg[1]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/inst_reg[0]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/arg_reg[11]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/arg_reg[10]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/arg_reg[9]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/arg_reg[8]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/arg_reg[7]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/arg_reg[6]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/arg_reg[5]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/arg_reg[4]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/arg_reg[3]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/arg_reg[2]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/arg_reg[1]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/arg_reg[0]) is unused and will be removed from module test_up.
 WARNING: [Synth 8-3332] Sequential element (mef/PC_reg[3]) is unused and will be removed from module test_up.
 WARNING: [Synth 8-3332] Sequential element (mef/PC_reg[2]) is unused and will be removed from module test_up.
 WARNING: [Synth 8-3332] Sequential element (mef/PC_reg[1]) is unused and will be removed from module test_up.
 WARNING: [Synth 8-3332] Sequential element (mef/PC_reg[0]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/PC_reg[3]__0) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/PC_reg[2]__0) is unused and will be removed from module test_up.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'mef/PC_reg[2]__0/Q' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:57]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:57]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:57]
-WARNING: [Synth 8-3332] Sequential element (mef/PC_reg[1]__0) is unused and will be removed from module test_up.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'mef/PC_reg[1]__0/Q' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:57]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:57]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:57]
-WARNING: [Synth 8-3332] Sequential element (mef/PC_reg[0]__0) is unused and will be removed from module test_up.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'mef/PC_reg[0]__0/Q' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:57]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:57]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Altium-3/Documents/Thibo_Amine/project_FPGA/project_FPGA.srcs/sources_1/new/FSM.vhd:57]
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[15]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[14]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[13]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[12]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[11]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[10]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[9]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[8]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[7]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[6]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[5]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[4]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[3]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[2]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[1]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mef/IR_reg[0]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/ACC_reg[11]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/ACC_reg[10]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/ACC_reg[9]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/ACC_reg[8]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/ACC_reg[7]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/ACC_reg[6]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/ACC_reg[5]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/ACC_reg[4]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/ACC_reg[3]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/ACC_reg[2]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/ACC_reg[1]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/ACC_reg[0]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/tmp_sw_reg[10]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/tmp_sw_reg[9]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/tmp_sw_reg[8]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/tmp_sw_reg[7]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/tmp_sw_reg[6]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/tmp_sw_reg[5]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/tmp_sw_reg[4]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/tmp_sw_reg[3]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/tmp_sw_reg[2]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/tmp_sw_reg[1]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (ual/tmp_sw_reg[0]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (aff/oData_reg[6]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (aff/oData_reg[5]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (aff/oData_reg[4]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (aff/oData_reg[3]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (aff/oData_reg[2]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (aff/oData_reg[1]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (aff/oData_reg[0]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (aff/temp_reg[1]) is unused and will be removed from module test_up.
 WARNING: [Synth 8-3332] Sequential element (aff/ptemp_reg) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[15]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[14]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[13]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[12]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[11]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[10]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[9]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[8]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[7]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[6]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[5]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[4]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[3]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[2]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[1]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (mem/data_reg[0]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (aff/temp_reg[0]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (aff/temp_reg[3]) is unused and will be removed from module test_up.
-WARNING: [Synth 8-3332] Sequential element (aff/temp_reg[2]) is unused and will be removed from module test_up.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 598.746 ; gain = 391.945
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -461,10 +255,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -476,16 +270,14 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 598.746 ; gain = 391.945
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 598.746 ; gain = 391.945
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -502,7 +294,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -515,7 +307,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -527,25 +319,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -561,44 +353,51 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     1|
-|2     |CARRY4 |    14|
-|3     |LUT1   |    52|
-|4     |LUT2   |     4|
-|5     |LUT3   |     1|
-|6     |LUT4   |     4|
-|7     |LUT6   |    12|
-|8     |FDRE   |    60|
-|9     |IBUF   |     2|
-|10    |OBUF   |    15|
+|1     |BUFG   |     2|
+|2     |CARRY4 |    28|
+|3     |LUT1   |    84|
+|4     |LUT2   |    18|
+|5     |LUT3   |    22|
+|6     |LUT4   |    30|
+|7     |LUT5   |    35|
+|8     |LUT6   |    34|
+|9     |MUXF7  |    12|
+|10    |FDRE   |   118|
+|11    |LD     |    49|
+|12    |IBUF   |     1|
+|13    |OBUF   |    15|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------+----------+------+
 |      |Instance |Module    |Cells |
 +------+---------+----------+------+
-|1     |top      |          |   165|
-|2     |  aff    |afficheur |     8|
-|3     |  div    |diviseur  |   134|
-|4     |  mef    |FSM       |     5|
+|1     |top      |          |   448|
+|2     |  aff    |afficheur |    28|
+|3     |  div    |diviseur  |   132|
+|4     |  mef    |FSM       |   115|
+|5     |  mem    |ROM       |   111|
+|6     |  ual    |ALU       |    44|
 +------+---------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 598.746 ; gain = 391.945
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 616.133 ; gain = 406.055
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 9 critical warnings and 145 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 598.746 ; gain = 103.055
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 598.746 ; gain = 391.945
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 616.133 ; gain = 109.273
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 616.133 ; gain = 406.055
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 78 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 49 instances were transformed.
+  LD => LDCE: 49 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-106 Infos, 164 Warnings, 9 Critical Warnings and 0 Errors encountered.
+50 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 598.746 ; gain = 391.945
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 598.746 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 04 13:47:27 2018...
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 616.133 ; gain = 406.055
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.runs/synth_1/test_up.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 616.133 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 09 17:16:10 2018...
