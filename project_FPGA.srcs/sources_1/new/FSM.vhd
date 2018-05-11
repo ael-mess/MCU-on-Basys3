@@ -71,21 +71,21 @@ begin
 
     process(courant)
     begin
-            case courant is
-               when sf =>
-                   PC <= PC + "0001";
-                   IR <= data;
-                   suivant <= sd;
-                   led <= "001";    
-               when sd =>
-                   inst <= IR (15 downto 12);
-                   suivant <= se;
-                   led <= "010"; 
-               when se =>
-                   arg <= IR (11 downto 0);
-                   suivant <= sf;
-                   led <= "100"; 
-            end case;
+        case courant is
+            when sf =>
+                PC <= PC + "0001";
+                suivant <= sd;
+                led <= "001";
+            when sd =>
+                IR <= data;
+                arg <= IR (11 downto 0);
+                suivant <= se;
+                led <= "010"; 
+            when se =>
+                inst <= IR (15 downto 12);
+                suivant <= sf;
+                led <= "100"; 
+        end case;
     end process;
 
 end Behavioral;

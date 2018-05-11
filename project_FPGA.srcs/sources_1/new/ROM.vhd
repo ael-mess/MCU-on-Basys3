@@ -22,8 +22,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+--use IEEE.STD_LOGIC_ARITH.ALL;
+--use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity ROM is
     generic ( SIZE : positive := 16);
-    Port ( clk : in STD_LOGIC;
+    Port (
            data : out STD_LOGIC_VECTOR (15 downto 0);
            PC : in STD_LOGIC_VECTOR (3 downto 0));
 end ROM;
@@ -42,8 +42,9 @@ architecture Behavioral of ROM is
 type tab is array(SIZE downto 0) of std_logic_vector(15 downto 0);
 signal data_tab : tab;
 
-signal p_pc : integer := 0;
-signal c : STD_LOGIC_VECTOR (1 downto 0) := "00";
+signal ind : integer := 0;
+--signal p_pc : integer := 0;
+--signal c : STD_LOGIC_VECTOR (1 downto 0) := "00";
 
 begin
 
@@ -64,20 +65,31 @@ data_tab(13) <= "1010111110110001"; --sta 0xFB1
 data_tab(14) <= "1010110000011010"; --sta 0xC1A
 data_tab(15) <= "1010111111111111"; --sta 0xC
 
-process(clk)
+ind <= to_integer(unsigned(PC));
+
+process(PC)
 begin
-    --data <= data_tab(to_integer(unsigned(PC)));
-    if clk='1' and clk'event then
-        if c="00" then
-            data <= data_tab(p_pc);
-            p_pc <= p_pc + 1;
-            if p_pc=SIZE then p_pc<=0;
-            end if;
-        end if;
-        c <= c + "01";
-        if c="11" then c<="00";
-        end if;
+    if ind = SIZE then
+        data <= "1010111000001111"; --sta EOF
+    else
+        data <= data_tab(ind);
     end if;
 end process;
+
+--process(clk)
+--begin
+--    --data <= data_tab(to_integer(unsigned(PC)));
+--    if clk='1' and clk'event then
+--        if c="00" then
+--            data <= data_tab(p_pc);
+--            p_pc <= p_pc + 1;
+--            if p_pc=SIZE then p_pc<=0;
+--            end if;
+--        end if;
+--        c <= c + "01";
+--        if c="11" then c<="00";
+--        end if;
+--    end if;
+--end process;
 
 end Behavioral;

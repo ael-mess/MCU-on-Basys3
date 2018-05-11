@@ -54,6 +54,7 @@ begin
     begin
         case IR is
             when "0000" =>
+                
             when "0001" =>
                 ACC <= ARG and ACC;
             when "0010" =>
@@ -79,10 +80,15 @@ begin
             when "1010" =>
                 ACC <= ARG;
             when "1011" =>
+                
             when "1100" =>
+                
             when "1101" =>
+                
             when "1110" =>
-            when "1111" =>
+                
+            when others =>
+                
         end case;
     end process;
 
