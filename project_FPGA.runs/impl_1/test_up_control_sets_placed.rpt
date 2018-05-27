@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Wed May 09 17:16:59 2018
+| Date         : Mon May 14 11:25:29 2018
 | Host         : Altium-07 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file test_up_control_sets_placed.rpt
 | Design       : test_up
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    13 |
-| Unused register locations in slices containing registers |    57 |
+| Number of unique control sets                            |    12 |
+| Unused register locations in slices containing registers |    46 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,35 +33,34 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              66 |           33 |
+| No           | No                    | No                     |              68 |           29 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              52 |           14 |
-| Yes          | No                    | No                     |              14 |            3 |
+| Yes          | No                    | No                     |              32 |            8 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              35 |            9 |
+| Yes          | Yes                   | No                     |              18 |            6 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+-----------------------+---------------------+----------------------------+------------------+----------------+
-|      Clock Signal     |    Enable Signal    |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
-+-----------------------+---------------------+----------------------------+------------------+----------------+
-|  clock_IBUF_BUFG      |                     |                            |                2 |              2 |
-|  div/clk_aff          | aff/temp[3]_i_2_n_0 | aff/temp[3]_i_1_n_0        |                1 |              4 |
-|  temp_BUFG            |                     |                            |                2 |              4 |
-|  mef/led_OBUF[1]      |                     |                            |                3 |              4 |
-|  mef/led_OBUF[2]      |                     |                            |                4 |              9 |
-|  mef/temp_reg[3]_2[0] |                     |                            |                4 |             11 |
-|  div/clk_aff          |                     |                            |                2 |             11 |
-|  mef/E[0]             |                     |                            |               12 |             12 |
-|  mef/led_OBUF[0]      |                     |                            |                4 |             13 |
-|  temp_BUFG            | mem/p_pc[0]_i_1_n_0 |                            |                3 |             14 |
-|  clock_IBUF_BUFG      |                     | div/clear                  |                7 |             26 |
-|  clock_IBUF_BUFG      |                     | div/compteur200[0]_i_1_n_0 |                7 |             26 |
-|  temp_BUFG            | mem/p_pc[0]_i_1_n_0 | mem/p_pc[31]_i_1_n_0       |                8 |             31 |
-+-----------------------+---------------------+----------------------------+------------------+----------------+
++---------------------------------+---------------------+-----------------------------+------------------+----------------+
+|           Clock Signal          |    Enable Signal    |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++---------------------------------+---------------------+-----------------------------+------------------+----------------+
+|  clock_IBUF_BUFG                |                     |                             |                2 |              2 |
+|  temp_BUFG                      |                     |                             |                2 |              4 |
+|  microp/mef/courant_reg[0]_0[0] |                     |                             |                1 |              4 |
+|  div/clk_aff                    | aff/temp[3]_i_2_n_0 | aff/temp[3]_i_1_n_0         |                1 |              4 |
+|  microp/mef/temp_reg[3]_2[0]    |                     |                             |                4 |             11 |
+|  div/clk_aff                    |                     |                             |                2 |             11 |
+|  microp/mef/E[0]                |                     |                             |               12 |             12 |
+|  temp_BUFG                      | microp/mem/eqOp     | microp/mem/data[15]_i_1_n_0 |                5 |             14 |
+|  microp/mef/led_OBUF[1]         |                     |                             |                6 |             24 |
+|  clock_IBUF_BUFG                |                     | div/clear                   |                7 |             26 |
+|  clock_IBUF_BUFG                |                     | div/compteur200[0]_i_1_n_0  |                7 |             26 |
+|  temp_BUFG                      | microp/mem/eqOp     |                             |                8 |             32 |
++---------------------------------+---------------------+-----------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
@@ -69,12 +68,10 @@ Table of Contents
 +--------+-----------------------+
 | 2      |                     1 |
 | 4      |                     3 |
-| 9      |                     1 |
 | 11     |                     2 |
 | 12     |                     1 |
-| 13     |                     1 |
 | 14     |                     1 |
-| 16+    |                     3 |
+| 16+    |                     4 |
 +--------+-----------------------+
 
 

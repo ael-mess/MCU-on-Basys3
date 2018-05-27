@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 04.04.2018 09:25:20
+-- Create Date: 14.05.2018 10:33:50
 -- Design Name: 
 -- Module Name: up - Behavioral
 -- Project Name: 
@@ -55,7 +55,8 @@ component FSM
            PC_o : out STD_LOGIC_VECTOR (3 downto 0));
 end component;
 component ROM
-    Port ( data : out STD_LOGIC_VECTOR (15 downto 0);
+    Port ( clk : in STD_LOGIC;
+           data : out STD_LOGIC_VECTOR (15 downto 0);
            PC : in STD_LOGIC_VECTOR (3 downto 0));
 end component;
 component ALU
@@ -66,8 +67,9 @@ end component;
 
 begin
 
-mem : ROM port map (data => data_in, PC => PC);
+mem : ROM port map (clk => clk_up, data => data_in, PC => PC);
 mef : FSM port map (inst => IR, arg => ACC, data => data_in, clk => clk_up, reset => reset, PC_o => PC, led => led);
 ual : ALU port map (IR => IR, ARG => ACC, RESU => resu);
 
 end Behavioral;
+

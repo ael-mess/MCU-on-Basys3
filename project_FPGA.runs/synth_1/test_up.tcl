@@ -17,17 +17,18 @@ set_property target_language Verilog [current_project]
 set_property ip_cache_permissions disable [current_project]
 read_vhdl -library xil_defaultlib {
   C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ROM.vhd
+  C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/FSM.vhd
   C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/ALU.vhd
   C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/diviseur.vhd
   C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/afficheur.vhd
-  C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/FSM.vhd
+  C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/up.vhd
   C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/sources_1/new/test_up.vhd
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/constrs_1/new/test_diviseur.xdc
-set_property used_in_implementation false [get_files C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/constrs_1/new/test_diviseur.xdc]
+read_xdc C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/constrs_1/new/contraintes.xdc
+set_property used_in_implementation false [get_files C:/Users/Altium7/Desktop/MCU-on-Basys3-master/MCU-on-Basys3-master/project_FPGA.srcs/constrs_1/new/contraintes.xdc]
 
 
 synth_design -top test_up -part xc7a35tcpg236-1
